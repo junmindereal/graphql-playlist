@@ -16,7 +16,7 @@ function AddBook() {
       genre,
       authorId,
     };
-    addBook(book);
+    addBook({ variables: book });
   };
 
   if (loading) return <p>Loading...</p>;
