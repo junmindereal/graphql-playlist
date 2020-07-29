@@ -4,7 +4,7 @@ import { getBooksQuery } from "../queries/queries";
 import BookDetails from "./BookDetails";
 
 function BookList() {
-  const { loading, error, data } = useQuery(getBooksQuery);
+  const { loading, error, data, refetch } = useQuery(getBooksQuery);
   const [selected, setSelected] = useState(null);
 
   if (loading) return <p>Loading...</p>;
@@ -17,6 +17,7 @@ function BookList() {
             key={book.id}
             onClick={() => {
               setSelected(book.id);
+              refetch();
             }}
           >
             {book.name}
