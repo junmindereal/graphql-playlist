@@ -14,6 +14,7 @@ function BookList() {
       <ul className="book-list">
         {data.books.map((book) => (
           <li
+            className="list-item"
             key={book.id}
             onClick={() => {
               setSelected(book.id);

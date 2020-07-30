@@ -32,26 +32,31 @@ function AddBook() {
   if (error) return <p>Error :(</p>;
 
   return (
-    <form id="add-book" onSubmit={handleSubmit}>
+    <form className="add-book" onSubmit={handleSubmit}>
       <div className="field">
-        <label>Book name:</label>
         <input
+          className="form-input"
           type="text"
+          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
       </div>
       <div className="field">
-        <label>Genre:</label>
         <input
+          className="form-input"
           type="text"
+          placeholder="Genre"
           value={genre}
           onChange={(e) => setGenre(e.target.value)}
         />
       </div>
       <div className="field">
-        <label>Author:</label>
-        <select value={authorId} onChange={(e) => setAuthorId(e.target.value)}>
+        <select
+          className="form-select"
+          value={authorId}
+          onChange={(e) => setAuthorId(e.target.value)}
+        >
           <option value="">Select author</option>
           {data.authors.map((author) => (
             <option key={author.id} value={author.id}>
@@ -60,7 +65,7 @@ function AddBook() {
           ))}
         </select>
       </div>
-      <button>+</button>
+      <button className="btn-primary">Add Book</button>
     </form>
   );
 }
