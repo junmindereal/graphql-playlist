@@ -4,7 +4,7 @@ A study of how to use GraphQL in front-end and back-end
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these steps.
 
 ### Prerequisites
 
