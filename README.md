@@ -15,14 +15,14 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
 
-```
-   git clone https://github.com/junmindereal/graphql-playlist.git
-```
+   ```
+      git clone https://github.com/junmindereal/graphql-playlist.git
+   ```
 
 1. Install NPM packages in `/client` and `/server` directories
 
-```
-npm install
-```
+   ```
+   npm install
+   ```
 
-1. Run `nodemon app` on /server directory and Run `npm run start` on `/client` directory
+1. Run `nodemon app` on `/server` directory and Run `npm run start` on `/client` directory
